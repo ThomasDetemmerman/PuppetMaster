@@ -1,4 +1,4 @@
-class apache {
+node default {
 	package {'httpd':
 		ensure => intalled,
 		}
@@ -7,8 +7,9 @@ class apache {
 		enable => true,
 		}
 	
-	 firewall { '200 allow http'
-	     dport    => '80',
-	     proto    => 'tcp',
-	     action   => 'accept',
-		 } 
+	# firewall { '200 allow http':
+	 #    dport    => '80',
+	  #  proto    => 'tcp',
+	   #  action   => 'accept',
+	#	 }
+} 
