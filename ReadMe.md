@@ -11,6 +11,7 @@ node default {
 }
 ```
 # structuur
+```
 .
 ├── auth.conf
 ├── environments
@@ -33,3 +34,4 @@ node default {
 │       └── templates
 │           └── index.html.erb
 └── puppet.conf
+```
