@@ -1,7 +1,7 @@
 
 
-class PHP {
+class php {
 
-	class { 'PHP::install': }
+	class { 'php::install': }
 
 }
