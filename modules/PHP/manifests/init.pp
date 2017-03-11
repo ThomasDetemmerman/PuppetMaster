@@ -1,5 +1,7 @@
-class apache::install {
-	package {['php','php-mysql']:
-		ensure => installed,
-		}
+
+
+class PHP {
+
+	class { 'PHP::install': }
+
 }
