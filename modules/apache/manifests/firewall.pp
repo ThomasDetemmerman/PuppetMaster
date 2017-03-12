@@ -1,7 +1,14 @@
 class apache::firewall {
- firewall { '200 allow http':
-	    dport    => '80',
-	    proto    => 'tcp',
-	     action   => 'accept',
-		 }
+  firewalld_service { 'Allow http on zone public':
+   ensure  => 'present',
+   service => 'http',
+   zone    => 'public',
+   notify => Service[firewalld]
+ }
+
+ service {'firewalld':
+   ensure => running,
+   enable => true,
+   
+   }
 }
