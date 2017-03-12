@@ -1,4 +1,4 @@
-class apache::install {
+class mariadb::install {
 	package {'mariadb-server':
 		ensure => installed,
 		}
