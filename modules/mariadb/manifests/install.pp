@@ -5,7 +5,6 @@ class mariadb::install {
 
 		service {'mariadb':
 			ensure => running,
-			enable => true,
 			require => Package['mariadb-server'],
 			}
 }
